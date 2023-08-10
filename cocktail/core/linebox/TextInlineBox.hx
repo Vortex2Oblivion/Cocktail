@@ -1,3 +1,5 @@
+package cocktail.core.linebox;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.linebox;
 
 import cocktail.core.css.CoreStyle;
 import cocktail.core.geom.Matrix;
@@ -37,7 +38,7 @@ class TextInlineBox extends InlineBox
 	 * The bitmap data extracted from the native text to 
 	 * be displayed on screen
 	 */
-	public var nativeTextBitmap(get_nativeTextBitmap, null):NativeBitmapData;
+	public var nativeTextBitmap(get, null):NativeBitmapData;
 	
 	/**
 	 * A reusable rectangle used to draw text to bitmap

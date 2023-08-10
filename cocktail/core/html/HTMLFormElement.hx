@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -40,7 +41,7 @@ class HTMLFormElement extends HTMLElement
 	 * The length IDL attribute must return the number 
 	 * of nodes represented by the elements collection.
 	 */
-	public var length(get_length, null):Int;
+	public var length(get, null):Int;
 	
 	/**
 	 * A flag determining when the form is submitted
@@ -57,18 +58,18 @@ class HTMLFormElement extends HTMLElement
 	 * http method to use when submitting, defaults to 
 	 * GET
 	 */
-	public var method(get_method, set_method):String;
+	public var method(get, set):String;
 	
 	/**
 	 * encoding type used to submit data, 
 	 * default to url encoded
 	 */
-	public var enctype(get_enctype, set_enctype):String;
+	public var enctype(get, set):String;
 	
 	/**
 	 * contains the URL where to submit the form
 	 */
-	public var action(get_action, set_action):String;
+	public var action(get, set):String;
 	
 	public function new() 
 	{

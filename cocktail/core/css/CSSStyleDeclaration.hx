@@ -1,3 +1,5 @@
+package cocktail.core.css;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.css;
 
 import cocktail.core.css.CSSData;
 import cocktail.core.css.parsers.CSSStyleParser;
@@ -36,137 +37,137 @@ class CSSStyleDeclaration
 	/**
 	 * display styles
 	 */
-	public var display(get_display, set_display):String;
-	public var position(get_position, set_position):String;
-	public var cssFloat(get_cssFloat, set_cssFloat):String;
-	public var clear(get_clear, set_clear):String;
-	public var zIndex(get_zIndex, set_zIndex):String;
+	public var display(get, set):String;
+	public var position(get, set):String;
+	public var cssFloat(get, set):String;
+	public var clear(get, set):String;
+	public var zIndex(get, set):String;
 	
 	/**
 	 * box model styles
 	 */
-	public var margin(get_margin, set_margin):String;
-	public var marginLeft(get_marginLeft, set_marginLeft):String;
-	public var marginRight(get_marginRight, set_marginRight):String;
-	public var marginTop(get_marginTop, set_marginTop):String;
-	public var marginBottom(get_marginBottom, set_marginBottom):String;
+	public var margin(get, set):String;
+	public var marginLeft(get, set):String;
+	public var marginRight(get, set):String;
+	public var marginTop(get, set):String;
+	public var marginBottom(get, set):String;
 	
-	public var padding(get_padding, set_padding):String;
-	public var paddingLeft(get_paddingLeft, set_paddingLeft):String;
-	public var paddingRight(get_paddingRight, set_paddingRight):String;
-	public var paddingTop(get_paddingTop, set_paddingTop):String;
-	public var paddingBottom(get_paddingBottom, set_paddingBottom):String;
+	public var padding(get, set):String;
+	public var paddingLeft(get, set):String;
+	public var paddingRight(get, set):String;
+	public var paddingTop(get, set):String;
+	public var paddingBottom(get, set):String;
 
-	public var width(get_width, set_width):String;
-	public var height(get_height, set_height):String;
+	public var width(get, set):String;
+	public var height(get, set):String;
 	
-	public var minHeight(get_minHeight, set_minHeight):String;
-	public var maxHeight(get_maxHeight, set_maxHeight):String;
-	public var minWidth(get_minWidth, set_minWidth):String;
-	public var maxWidth(get_maxWidth, set_maxWidth):String;
+	public var minHeight(get, set):String;
+	public var maxHeight(get, set):String;
+	public var minWidth(get, set):String;
+	public var maxWidth(get, set):String;
 
-	public var top(get_top, set_top):String;
-	public var left(get_left, set_left):String;
-	public var bottom(get_bottom, set_bottom):String;
-	public var right(get_right, set_right):String;
+	public var top(get, set):String;
+	public var left(get, set):String;
+	public var bottom(get, set):String;
+	public var right(get, set):String;
 	
 	/**
 	 * background styles
 	 */
-	public var background(get_background, set_background):String;
-	public var backgroundColor(get_backgroundColor, set_backgroundColor):String;
-	public var backgroundImage(get_backgroundImage, set_backgroundImage):String;
-	public var backgroundRepeat(get_backgroundRepeat, set_backgroundRepeat):String;
-	public var backgroundOrigin(get_backgroundOrigin, set_backgroundOrigin):String;
-	public var backgroundSize(get_backgroundSize, set_backgroundSize):String;
-	public var backgroundPosition(get_backgroundPosition, set_backgroundPosition):String;
-	public var backgroundClip(get_backgroundClip, set_backgroundClip):String;
-	public var backgroundAttachment(get_backgroundAttachment, set_backgroundAttachment):String;
+	public var background(get, set):String;
+	public var backgroundColor(get, set):String;
+	public var backgroundImage(get, set):String;
+	public var backgroundRepeat(get, set):String;
+	public var backgroundOrigin(get, set):String;
+	public var backgroundSize(get, set):String;
+	public var backgroundPosition(get, set):String;
+	public var backgroundClip(get, set):String;
+	public var backgroundAttachment(get, set):String;
 	
 	/**
 	 * border styles
 	 */
-	public var borderTopWidth(get_borderTopWidth, set_borderTopWidth):String;
-	public var borderRightWidth(get_borderRightWidth, set_borderRightWidth):String;
-	public var borderBottomWidth(get_borderBottomWidth, set_borderBottomWidth):String;
-	public var borderLeftWidth(get_borderLeftWidth, set_borderLeftWidth):String;
-	public var borderWidth(get_borderWidth, set_borderWidth):String;
+	public var borderTopWidth(get, set):String;
+	public var borderRightWidth(get, set):String;
+	public var borderBottomWidth(get, set):String;
+	public var borderLeftWidth(get, set):String;
+	public var borderWidth(get, set):String;
 	
-	public var borderTopColor(get_borderTopColor, set_borderTopColor):String;
-	public var borderRightColor(get_borderRightColor, set_borderRightColor):String;
-	public var borderBottomColor(get_borderBottomColor, set_borderBottomColor):String;
-	public var borderLeftColor(get_borderLeftColor, set_borderLeftColor):String;
-	public var borderColor(get_borderColor, set_borderColor):String;
+	public var borderTopColor(get, set):String;
+	public var borderRightColor(get, set):String;
+	public var borderBottomColor(get, set):String;
+	public var borderLeftColor(get, set):String;
+	public var borderColor(get, set):String;
 	
-	public var borderTopStyle(get_borderTopStyle, set_borderTopStyle):String;
-	public var borderRightStyle(get_borderRightStyle, set_borderRightStyle):String;
-	public var borderBottomStyle(get_borderBottomStyle, set_borderBottomStyle):String;
-	public var borderLeftStyle(get_borderLeftStyle, set_borderLeftStyle):String;
-	public var borderStyle(get_borderStyle, set_borderStyle):String;
+	public var borderTopStyle(get, set):String;
+	public var borderRightStyle(get, set):String;
+	public var borderBottomStyle(get, set):String;
+	public var borderLeftStyle(get, set):String;
+	public var borderStyle(get, set):String;
 	
-	public var borderTop(get_borderTop, set_borderTop):String;
-	public var borderRight(get_borderRight, set_borderRight):String;
-	public var borderBottom(get_borderBottom, set_borderBottom):String;
-	public var borderLeft(get_borderLeft, set_borderLeft):String;
-	public var border(get_border, set_border):String;
+	public var borderTop(get, set):String;
+	public var borderRight(get, set):String;
+	public var borderBottom(get, set):String;
+	public var borderLeft(get, set):String;
+	public var border(get, set):String;
 	
 	/**
 	 * font styles
 	 */
-	public var font(get_font, set_font):String;
-	public var fontSize(get_fontSize, set_fontSize):String;
-	public var fontWeight(get_fontWeight, set_fontWeight):String;
-	public var fontStyle(get_fontStyle, set_fontStyle):String;
-	public var fontFamily(get_fontFamily, set_fontFamily ):String;
-	public var fontVariant(get_fontVariant, set_fontVariant):String;
-	public var color(get_color, set_color):String;
+	public var font(get, set):String;
+	public var fontSize(get, set):String;
+	public var fontWeight(get, set):String;
+	public var fontStyle(get, set):String;
+	public var fontFamily(get, set ):String;
+	public var fontVariant(get, set):String;
+	public var color(get, set):String;
 	
 	/**
 	 * text styles
 	 */
-	public var lineHeight(get_lineHeight, set_lineHeight):String;
-	public var textTransform(get_textTransform, set_textTransform):String;
-	public var letterSpacing(get_letterSpacing, set_letterSpacing):String;
-	public var wordSpacing(get_wordSpacing, set_wordSpacing):String;
-	public var whiteSpace(get_whiteSpace, set_whiteSpace):String;
-	public var textAlign(get_textAlign, set_textAlign):String;
-	public var textIndent(get_textIndent, set_textIndent):String;
-	public var verticalAlign(get_verticalAlign, set_verticalAlign):String;
-	public var textDecoration(get_textDecoration, set_textDecoration):String;
+	public var lineHeight(get, set):String;
+	public var textTransform(get, set):String;
+	public var letterSpacing(get, set):String;
+	public var wordSpacing(get, set):String;
+	public var whiteSpace(get, set):String;
+	public var textAlign(get, set):String;
+	public var textIndent(get, set):String;
+	public var verticalAlign(get, set):String;
+	public var textDecoration(get, set):String;
 	
 	/**
 	 * visual effect styles
 	 */
-	public var opacity(get_opacity, set_opacity):String;
-	public var visibility(get_visibility, set_visibility):String;
+	public var opacity(get, set):String;
+	public var visibility(get, set):String;
 	
-	public var overflow(get_overflow, set_overflow):String;
-	public var overflowX(get_overflowX,  set_overflowX):String;
-	public var overflowY(get_overflowY,  set_overflowY):String;
+	public var overflow(get, set):String;
+	public var overflowX(get,  set):String;
+	public var overflowY(get,  set):String;
 	
 	/**
 	 * transition styles
 	 */
-	public var transitionProperty(get_transitionProperty, set_transitionProperty):String;
-	public var transitionDuration(get_transitionDuration, set_transitionDuration):String;
-	public var transitionTimingFunction(get_transitionTimingFunction, set_transitionTimingFunction):String;
-	public var transitionDelay(get_transitionDelay, set_transitionDelay):String;
+	public var transitionProperty(get, set):String;
+	public var transitionDuration(get, set):String;
+	public var transitionTimingFunction(get, set):String;
+	public var transitionDelay(get, set):String;
 	
 	/**
 	* transformation styles
 	*/
-	public var transform(get_transform, set_transform):String; 	
-	public var transformOrigin(get_transformOrigin, set_transformOrigin):String; 
+	public var transform(get, set):String; 	
+	public var transformOrigin(get, set):String; 
 	
 	/**
 	 * user interface styles
 	 */
-	public var cursor(get_cursor, set_cursor):String;
+	public var cursor(get, set):String;
 	
-	public var outline(get_outline, set_outline):String;
-	public var outlineWidth(get_outlineWidth, set_outlineWidth):String;
-	public var outlineColor(get_outlineColor, set_outlineColor):String;
-	public var outlineStyle(get_outlineStyle, set_outlineStyle):String;
+	public var outline(get, set):String;
+	public var outlineWidth(get, set):String;
+	public var outlineColor(get, set):String;
+	public var outlineStyle(get, set):String;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// ATTRIBUTES
@@ -178,7 +179,7 @@ class CSSStyleDeclaration
 	 * typed CSS object, reset all the previously stored
 	 * CSS objects
 	 */
-	public var cssText(get_cssText, set_cssText):String;
+	public var cssText(get, set):String;
 	
 	/**
 	 * The number of style declaration on this

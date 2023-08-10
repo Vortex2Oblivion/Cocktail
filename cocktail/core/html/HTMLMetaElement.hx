@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -25,12 +26,12 @@ class HTMLMetaElement extends HTMLElement
 	/**
 	 * The name of the metadata
 	 */
-	public var name(get_name, set_name):String;
+	public var name(get, set):String;
 	
 	/**
 	 * The content of the metadata
 	 */
-	public var content(get_content, set_content):String;
+	public var content(get, set):String;
 
 	public function new() 
 	{

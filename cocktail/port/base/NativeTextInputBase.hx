@@ -1,3 +1,5 @@
+package cocktail.port.base;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.port.base;
 
 import cocktail.core.geom.GeomData;
 import cocktail.core.graphics.GraphicsContext;
@@ -31,17 +32,17 @@ class NativeTextInputBase extends NativeInputBase
 	
 	//getter/seter for style attributes
 	
-	@:isVar public var italic(get_italic, set_italic):Bool;
+	@:isVar public var italic(get, set):Bool;
 	
-	@:isVar public var bold(get_bold, set_bold):Bool;
+	@:isVar public var bold(get, set):Bool;
 	
-	@:isVar public var color(get_color, set_color):Int;
+	@:isVar public var color(get, set):Int;
 	
-	@:isVar public var fontFamily(get_fontFamily, set_fontFamily):String;
+	@:isVar public var fontFamily(get, set):String;
 	
-	@:isVar public var letterSpacing(get_letterSpacing, set_letterSpacing):Float;
+	@:isVar public var letterSpacing(get, set):Float;
 	
-	@:isVar public var fontSize(get_fontSize, set_fontSize):Float;
+	@:isVar public var fontSize(get, set):Float;
 	
 	/**
 	 * class constructor

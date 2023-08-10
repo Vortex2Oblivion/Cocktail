@@ -35,24 +35,24 @@ class XMLHTTPRequest extends XMLHttpRequestEventTarget
 	/**
 	 * Returns the response entity body.
 	 */
-	public var response(get_response, null):Dynamic;
+	public var response(get, null):Dynamic;
 	
 	/**
 	 * Returns the text response entity body.
 	 */
-	public var responseText(get_responseText, null):String;
+	public var responseText(get, null):String;
 	
 	/**
 	 * Returns the document response entity body.
 	 */
-	public var responseXML(get_responseXML, null):Document;
+	public var responseXML(get, null):Document;
 	
 	/**
 	 * Returns the response type.
 	 * Can be set to change the response type. 
 	 * Values are: the empty string (default), "arraybuffer", "blob", "document", "json", and "text".
 	 */
-	public var responseType(default, set_responseType):String;
+	public var responseType(default, set):String;
 	
 	/**
 	 * Returns the associated XMLHttpRequestUpload object.
@@ -62,18 +62,18 @@ class XMLHTTPRequest extends XMLHttpRequestEventTarget
 	/**
 	 * returns the HTTP status
 	 */
-	public var status(get_status, null):Int;
+	public var status(get, null):Int;
 	
 	/**
 	 * Returns the HTTP status text.
 	 */
-	public var statusText(get_statusText, null):String;
+	public var statusText(get, null):String;
 	
 	/**
 	 * Called each time the status of the HTTP request
 	 * changes
 	 */
-	public var onreadystatechange(default, set_onreadystatechange):Event->Void;
+	public var onreadystatechange(default, set):Event->Void;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// PRIVATE ATTRIBUTES

@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -22,7 +23,7 @@ class NativeTextBase
 	/**
 	 * return the width of the text
 	 */
-	public var width(get_width, null):Float;
+	public var width(get, null):Float;
 	
 	/**
 	 * The platform specific text element

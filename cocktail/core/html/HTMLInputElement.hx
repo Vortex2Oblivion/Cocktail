@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -86,13 +87,13 @@ class HTMLInputElement extends FormAssociatedElement
 	 * "reset", "image", "checkbox" or "radio", this represents 
 	 * the HTML value attribute of the element.
 	 */
-	public var value(get_value, set_value):String;
+	public var value(get, set):String;
 	
 	/**
 	 * Limit the max number of characters whihc can
 	 * be inputed
 	 */
-	public var maxLength(get_maxLength, set_maxLength):Int;
+	public var maxLength(get, set):Int;
 	
 	/**
 	 * The checked IDL attribute allows scripts to manipulate the checkedness of an
@@ -101,32 +102,32 @@ class HTMLInputElement extends FormAssociatedElement
 	 * checkedness to the new value and set the element's
 	 * dirty checkedness flag to true.
 	 */
-	public var checked(get_checked, set_checked):Bool;
+	public var checked(get, set):Bool;
 	
 	/**
 	 * The readonly attribute is a boolean attribute that controls
 	 * whether or not the user can edit the form control.
 	 */
-	public var readOnly(get_readOnly, set_readOnly):Bool;
+	public var readOnly(get, set):Bool;
 	
 	/**
 	 * A form control that is disabled must prevent any click events
 	 * that are queued on the user interaction task source
 	 * from being dispatched on the element.
 	 */
-	public var disabled(get_disabled, set_disabled):Bool;
+	public var disabled(get, set):Bool;
 	
 	/**
 	 * The type attribute controls the data type 
 	 * (and associated control) of the element
 	 */
-	public var type(get_type, set_type):String;
+	public var type(get, set):String;
 	
 	/**
 	 * The name content attribute gives the name of the form control,
 	 * as used in form submission and in the form element's elements object
 	 */
-	public var name(get_name, set_name):String;
+	public var name(get, set):String;
 	
 	/**
 	 * class constructor

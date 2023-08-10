@@ -49,7 +49,7 @@ interface IScrollableView<ViewClass> {
  * 
  * @author Yannick DOMINGUEZ
  */
-class ScrollableView<ViewClass:(FastNode<ViewClass>, IScrollableView<ViewClass>)> extends FastNode<ViewClass> implements IScrollableView<ViewClass>
+class ScrollableView<ViewClass:FastNode<ViewClass> & IScrollableView<ViewClass>> extends FastNode<ViewClass> implements IScrollableView<ViewClass>
 {	
 	/**
 	 * A reference to the ElementRenderer which
@@ -141,12 +141,12 @@ class ScrollableView<ViewClass:(FastNode<ViewClass>, IScrollableView<ViewClass>)
 	 * overflow in the x-axis. The scroll offset can't be
 	 * inferior to 0
 	 */
-	public var scrollLeft(default, set_scrollLeft):Float;
+	public var scrollLeft(default, set):Float;
 	
 	/**
 	 * same as scrollLeft for the y-axis
 	 */
-	public var scrollTop(default, set_scrollTop):Float;
+	public var scrollTop(default, set):Float;
 	
 	/**
 	 * class constructor

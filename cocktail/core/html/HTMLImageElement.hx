@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -46,7 +47,7 @@ class HTMLImageElement extends EmbeddedElement
 	 * store it and retrieve it from the attributes map,
 	 * and start the loading of the picture when set
 	 */
-	public var src(get_src, set_src):String;
+	public var src(get, set):String;
 	
 	//////////////////////
 	// ATTRIBUTES
@@ -56,13 +57,13 @@ class HTMLImageElement extends EmbeddedElement
 	 * The instrinsic width of the loaded picture or
 	 * return 0 if not available
 	 */
-	public var naturalWidth(get_naturalWidth, never):Int;
+	public var naturalWidth(get, never):Int;
 	
 	/**
 	 * The instrinsic height of the loaded picture  or
 	 * return 0 if not available
 	 */
-	public var naturalHeight(get_naturalHeight, never):Int;
+	public var naturalHeight(get, never):Int;
 	
 	/**
 	 * Callback called when resource sucessfully loaded

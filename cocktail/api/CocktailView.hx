@@ -1,3 +1,5 @@
+package cocktail.api;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.api;
 
 import cocktail.core.event.EventConstants;
 import cocktail.core.event.KeyboardEvent;
@@ -97,7 +98,7 @@ class CocktailView
 	 * 
 	 * can be set any number of time to move and resize the document
 	 */
-	public var viewport(default, set_viewport):Viewport;
+	public var viewport(default, set):Viewport;
 
 	/**
 	 * a reference to the platform API instantiated for the 

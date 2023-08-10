@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -40,13 +41,13 @@ class NativeHttpBase extends EventTarget
 	 * The total number of bytes of the loaded
 	 * resource
 	 */
-	public var total(get_total, null):Int;
+	public var total(get, null):Int;
 	
 	/**
 	 * The current number of loaded bytes for
 	 * the loaded resource
 	 */
-	public var loaded(get_loaded, null):Int;
+	public var loaded(get, null):Int;
 	
 	/**
 	 * The response headers of the http request

@@ -181,24 +181,24 @@ class ElementRenderer extends FastNode<ElementRenderer>
 	/**
 	 * get/set the scrolling in the x axis of this ElementRenderer.
 	 */
-	public var scrollLeft(get_scrollLeft, set_scrollLeft):Float;
+	public var scrollLeft(get, set):Float;
 	
 	/**
 	 * get/set the scrolling in the y axis of this ElementRenderer
 	 */
-	public var scrollTop(get_scrollTop, set_scrollTop):Float;
+	public var scrollTop(get, set):Float;
 	
 	/**
 	 * get the greater value between the element's content area 
 	 * width and its scrollable content width
 	 */
-	public var scrollWidth(get_scrollWidth, never):Float;
+	public var scrollWidth(get, never):Float;
 	
 	/**
 	 * get the greater value between the element's content area 
 	 * height and its scrollable content height
 	 */
-	public var scrollHeight(get_scrollHeight, never):Float;
+	public var scrollHeight(get, never):Float;
 
 	/**
 	 * A reference to the containing block of this
@@ -214,28 +214,28 @@ class ElementRenderer extends FastNode<ElementRenderer>
 	 * normal flow (not floatged or absolutely positioned)
 	 * or null if no such sibling exists
 	 */
-	public var previousNormalFlowSibling(get_previousNormalFlowSibling, null):ElementRenderer;
+	public var previousNormalFlowSibling(get, null):ElementRenderer;
 	
 	/**
 	 * Return the first next sibling belonging to the
 	 * normal flow (not floatged or absolutely positioned)
 	 * or null if no such sibling exists
 	 */
-	public var nextNormalFlowSibling(get_nextNormalFlowSibling, null):ElementRenderer;
+	public var nextNormalFlowSibling(get, null):ElementRenderer;
 	
 	/**
 	 * Return the first child belonging to the
 	 * normal flow (not floatged or absolutely positioned)
 	 * or null if no such child exists
 	 */
-	public var firstNormalFlowChild(get_firstNormalFlowChild, null):ElementRenderer;
+	public var firstNormalFlowChild(get, null):ElementRenderer;
 	
 	/**
 	 * Return the last child belonging to the
 	 * normal flow (not floatged or absolutely positioned)
 	 * or null if no such child exists
 	 */
-	public var lastNormalFlowChild(get_lastNormalFlowChild, null):ElementRenderer;
+	public var lastNormalFlowChild(get, null):ElementRenderer;
 	
 	/**
 	 * Helper attribute, return wether

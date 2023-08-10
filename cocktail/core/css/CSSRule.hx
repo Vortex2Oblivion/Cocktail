@@ -1,3 +1,5 @@
+package cocktail.core.css;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.css;
 
 /**
  * The CSSRule interface represents an abstract, base 
@@ -57,7 +58,7 @@ class CSSRule
 	 * a CSS serialisation of the rule, on setting
 	 * parse the CSS rule into object
 	 */
-	@:isVar public var cssText(get_cssText, set_cssText):String;
+	@:isVar public var cssText(get, set):String;
 	
 	/**
 	 * The parentRule attribute must return the nearest

@@ -1,3 +1,5 @@
+package cocktail.core.floats;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.floats;
 
 import cocktail.core.css.CoreStyle;
 import cocktail.core.renderer.BlockBoxRenderer;
@@ -53,7 +54,7 @@ class FloatsManager
 	/**
 	 * Return wether this float manager has any registered float
 	 */
-	public var hasFloats(get_hasFloats, null):Bool;
+	public var hasFloats(get, null):Bool;
 	
 	/**
 	 * Class constructor, init the structure holding

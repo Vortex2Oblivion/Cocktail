@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -27,40 +28,40 @@ class InputRenderer extends BlockBoxRenderer
 	/**
 	 * get/set the value of the input
 	 */
-	public var value(get_value, set_value):String;
+	public var value(get, set):String;
 	
 	/**
 	 * get/set checkedness of the input
 	 */
-	public var checked(get_checked, set_checked):Bool;
+	public var checked(get, set):Bool;
 	
 	/**
 	 * Get/set the maxLength of the input
 	 */
-	public var maxLength(default, set_maxLength):Int;
+	public var maxLength(default, set):Int;
 	
 	/**
 	 * Get/set wether the input is disabled (can't be 
 	 * interacted by the user, however value of input
 	 * can be changed programmatically)
 	 */
-	public var disabled(default, set_disabled):Bool;
+	public var disabled(default, set):Bool;
 	
 	/**
 	 * Get/set wether the input is read-only (similar
 	 * to disabled but only applies to text based input)
 	 */
-	public var readonly(default, set_readonly):Bool;
+	public var readonly(default, set):Bool;
 	
 	/**
 	 * Return the instrinsic width of the native control
 	 */
-	public var intrinsicWidth(get_intrinsicWidth, null):Int;
+	public var intrinsicWidth(get, null):Int;
 	
 	/**
 	 * Return the instrinsic height of the native control
 	 */
-	public var intrinsicHeight(get_intrinsicHeight, null):Int;
+	public var intrinsicHeight(get, null):Int;
 	
 	/**
 	 * a reference to the native input renderedd by

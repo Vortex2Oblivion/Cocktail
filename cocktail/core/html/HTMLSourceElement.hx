@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -25,7 +26,7 @@ class HTMLSourceElement extends HTMLElement
 	 * The value must be a valid non-empty URL potentially surrounded by spaces. 
 	 * This attribute must be present.
 	 */
-	public var src(get_src, set_src):String;
+	public var src(get, set):String;
 	
 	/**
 	 * The type attribute gives the type of the media resource,
@@ -34,7 +35,7 @@ class HTMLSourceElement extends HTMLElement
 	 * The codecs parameter, which certain MIME types define, might
 	 * be necessary to specify exactly how the resource is encoded.
 	 */
-	public var type(get_type, set_type):String;
+	public var type(get, set):String;
 	
 	/**
 	 * The media attribute gives the intended media type of the media
@@ -46,7 +47,7 @@ class HTMLSourceElement extends HTMLElement
 	 * 
 	 * TODO 5 : media query not supported
 	 */
-	public var media(get_media, set_media):String;
+	public var media(get, set):String;
 	
 	/**
 	 * class constructor

@@ -1,3 +1,5 @@
+package cocktail.core.html;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.html;
 
 import cocktail.core.css.CSSStyleSheet;
 import cocktail.core.css.StyleSheet;
@@ -27,7 +28,7 @@ class HTMLStyleElement extends HTMLElement
 	// IDL attributes
 	//////////////////////////////////////////////////////////////////////////////////////////
 	
-	public var disabled(get_disabled, set_disabled):Bool;
+	public var disabled(get, set):Bool;
 	
 	/**
 	 * A reference to the CSS style sheet created by this

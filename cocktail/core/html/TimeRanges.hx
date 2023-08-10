@@ -21,7 +21,7 @@ class TimeRanges
 	/**
 	 * Returns the number of ranges in the object.
 	 */
-	public var length(get_length, never):Int;
+	public var length(get, never):Int;
 	
 	/**
 	 * An array of range

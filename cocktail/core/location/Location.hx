@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -24,7 +25,7 @@ class Location
 	 * Returns the current page's location.
 	 * Can be set, to navigate to another page.
 	 */
-	public var href(default, set_href):String;
+	public var href(default, set):String;
 	
 	/**
 	 * callback called when the location is set
@@ -36,17 +37,17 @@ class Location
 	 * 
 	 * TODO : implement setters
 	 */
-	public var protocol(get_protocol, never):String;
+	public var protocol(get, never):String;
 	
-	public var host(get_host, never):String;
+	public var host(get, never):String;
 	
-	public var hostname(get_hostname, never):String;
+	public var hostname(get, never):String;
 	
-	public var port(get_port, never):String;
+	public var port(get, never):String;
 	
-	public var pathname(get_pathname, never):String;
+	public var pathname(get, never):String;
 	
-	public var search(get_search, never):String;
+	public var search(get, never):String;
 	
 	/**
 	 * a ref to the document owning this location

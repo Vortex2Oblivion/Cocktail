@@ -1,3 +1,5 @@
+package cocktail.core.html;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.html;
 import cocktail.core.event.Event;
 import cocktail.core.event.EventConstants;
 import cocktail.core.event.UIEvent;
@@ -39,7 +40,7 @@ class HTMLVideoElement extends HTMLMediaElement
 	 * The poster attribute gives the address of an image file that the user
 	 * agent can show while no video data is available.
 	 */
-	public var poster(get_poster, set_poster):String;
+	public var poster(get, set):String;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// attributes
@@ -67,12 +68,12 @@ class HTMLVideoElement extends HTMLMediaElement
 	/**
 	 * Returns the intrinsic width of the video in CSS pixels
 	 */
-	public var videoWidth(get_videoWidth, never):Int;
+	public var videoWidth(get, never):Int;
 	
 	/**
 	 * Returns the intrinsic height of the video in CSS pixels
 	 */
-	public var videoHeight(get_videoHeight, never):Int;
+	public var videoHeight(get, never):Int;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// CONSTRUCTOR & INIT

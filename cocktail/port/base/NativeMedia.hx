@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -28,49 +29,49 @@ class NativeMedia
 	 * native media, available as soon as 
 	 * the meta data are loaded
 	 */
-	public var duration(get_duration, never):Float;
+	public var duration(get, never):Float;
 	
 	/**
 	 * set the volume of the native media
 	 */
-	public var volume(null, set_volume):Float;
+	public var volume(null, set):Float;
 	
 	/**
 	 * set the source of th native media, starting loading
 	 * it
 	 */
-	public var src(never, set_src):String;
+	public var src(never, set):String;
 	
 	/**
 	 * return the instrinsic width of
 	 * the native media
 	 */
-	public var width(get_width, never):Null<Int>;
+	public var width(get, never):Null<Int>;
 	
 	/**
 	 * return the instrinsic height of
 	 * the native media
 	 */
-	public var height(get_height, never):Null<Int>;
+	public var height(get, never):Null<Int>;
 	
 	/**
 	 * Return the current playhead time, in
 	 * seconds
 	 */
-	public var currentTime(get_currentTime, never):Float;
+	public var currentTime(get, never):Float;
 	
 	/**
 	 * get the currently loaded number of bytes of the 
 	 * media
 	 */
-	public var bytesLoaded(get_bytesLoaded, never):Float;
+	public var bytesLoaded(get, never):Float;
 	
 	/**
 	 * get the total number of bytes of the media. Used
 	 * with bytesLoaded to estimate the load progress of
 	 * the media
 	 */
-	public var bytesTotal(get_bytesTotal, never):Float;
+	public var bytesTotal(get, never):Float;
 	
 	/**
 	 * Listen to the native event dispatched when the metadata
@@ -82,19 +83,19 @@ class NativeMedia
 	 * The viewport represents the position and size of the
 	 * displayed native video relative to the window
 	 */
-	@:isVar public var viewport(get_viewport, set_viewport):RectangleVO;
+	@:isVar public var viewport(get, set):RectangleVO;
 	
 	/**
 	 * Represents the 3x3 transformation matrix to 
 	 * apply to the displayed native video 
 	 */
-	@:isVar public var matrix(get_matrix, set_matrix):Matrix;
+	@:isVar public var matrix(get, set):Matrix;
 	
 	/**
 	 * Represents the alpha, from 0(transparent) to 1.0
 	 * (opaque) to apply to the displayed video
 	 */
-	@:isVar public var alpha(get_alpha, set_alpha):Float;
+	@:isVar public var alpha(get, set):Float;
 	
 	/**
 	 * class constructor

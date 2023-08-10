@@ -1,3 +1,5 @@
+package cocktail.core.css;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.css;
 
 import cocktail.core.css.CSSData;
 import cocktail.core.css.parsers.CSSParsersData;
@@ -26,7 +27,7 @@ class CSSStyleRule extends CSSRule
 	 * set, parse it. When get serialze the
 	 * typed selector as a string
 	 */
-	public var selectorText(get_selectorText, set_selectorText):String;
+	public var selectorText(get, set):String;
 	
 	/**
 	 * The selectors of this style rule, as

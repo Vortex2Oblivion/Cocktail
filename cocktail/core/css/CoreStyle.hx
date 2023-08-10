@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -54,117 +55,117 @@ class CoreStyle
 	/**
 	 * display styles
 	 */
-	public var display(get_display, null):CSSPropertyValue;
-	public var position(get_position, null):CSSPropertyValue;
-	public var cssFloat(get_cssFloat, null):CSSPropertyValue;
-	public var clear(get_clear, null):CSSPropertyValue;
-	public var zIndex(get_zIndex, null):CSSPropertyValue;
+	public var display(get, null):CSSPropertyValue;
+	public var position(get, null):CSSPropertyValue;
+	public var cssFloat(get, null):CSSPropertyValue;
+	public var clear(get, null):CSSPropertyValue;
+	public var zIndex(get, null):CSSPropertyValue;
 	
 	/**
 	 * box model styles
 	 */
-	public var marginLeft(get_marginLeft, null):CSSPropertyValue;
-	public var marginRight(get_marginRight, null):CSSPropertyValue;
-	public var marginTop(get_marginTop, null):CSSPropertyValue;
-	public var marginBottom(get_marginBottom, null):CSSPropertyValue;
+	public var marginLeft(get, null):CSSPropertyValue;
+	public var marginRight(get, null):CSSPropertyValue;
+	public var marginTop(get, null):CSSPropertyValue;
+	public var marginBottom(get, null):CSSPropertyValue;
 	
-	public var paddingLeft(get_paddingLeft, null):CSSPropertyValue;
-	public var paddingRight(get_paddingRight, null):CSSPropertyValue;
-	public var paddingTop(get_paddingTop, null):CSSPropertyValue;
-	public var paddingBottom(get_paddingBottom, null):CSSPropertyValue;
+	public var paddingLeft(get, null):CSSPropertyValue;
+	public var paddingRight(get, null):CSSPropertyValue;
+	public var paddingTop(get, null):CSSPropertyValue;
+	public var paddingBottom(get, null):CSSPropertyValue;
 
-	public var width(get_width, null):CSSPropertyValue;
-	public var height(get_height, null):CSSPropertyValue;
+	public var width(get, null):CSSPropertyValue;
+	public var height(get, null):CSSPropertyValue;
 	
-	public var minHeight(get_minHeight, null):CSSPropertyValue;
-	public var maxHeight(get_maxHeight, null):CSSPropertyValue;
-	public var minWidth(get_minWidth, null):CSSPropertyValue;
-	public var maxWidth(get_maxWidth, null):CSSPropertyValue;
+	public var minHeight(get, null):CSSPropertyValue;
+	public var maxHeight(get, null):CSSPropertyValue;
+	public var minWidth(get, null):CSSPropertyValue;
+	public var maxWidth(get, null):CSSPropertyValue;
 
-	public var top(get_top, null):CSSPropertyValue;
-	public var left(get_left, null):CSSPropertyValue;
-	public var bottom(get_bottom, null):CSSPropertyValue;
-	public var right(get_right, null):CSSPropertyValue;
+	public var top(get, null):CSSPropertyValue;
+	public var left(get, null):CSSPropertyValue;
+	public var bottom(get, null):CSSPropertyValue;
+	public var right(get, null):CSSPropertyValue;
 	
 	/**
 	 * background styles
 	 */
-	public var backgroundColor(get_backgroundColor, null):CSSPropertyValue;
-	public var backgroundImage(get_backgroundImage, null):CSSPropertyValue;
-	public var backgroundRepeat(get_backgroundRepeat, null):CSSPropertyValue;
-	public var backgroundOrigin(get_backgroundOrigin, null):CSSPropertyValue;
-	public var backgroundSize(get_backgroundSize, null):CSSPropertyValue;
-	public var backgroundPosition(get_backgroundPosition, null):CSSPropertyValue;
-	public var backgroundClip(get_backgroundClip, null):CSSPropertyValue;
-	public var backgroundAttachment(get_backgroundAttachment, null):CSSPropertyValue;
+	public var backgroundColor(get, null):CSSPropertyValue;
+	public var backgroundImage(get, null):CSSPropertyValue;
+	public var backgroundRepeat(get, null):CSSPropertyValue;
+	public var backgroundOrigin(get, null):CSSPropertyValue;
+	public var backgroundSize(get, null):CSSPropertyValue;
+	public var backgroundPosition(get, null):CSSPropertyValue;
+	public var backgroundClip(get, null):CSSPropertyValue;
+	public var backgroundAttachment(get, null):CSSPropertyValue;
 	
 	/**
 	 * border styles
 	 */
-	public var borderTopWidth(get_borderTopWidth, null):CSSPropertyValue;
-	public var borderRightWidth(get_borderRightWidth, null):CSSPropertyValue;
-	public var borderBottomWidth(get_borderBottomWidth, null):CSSPropertyValue;
-	public var borderLeftWidth(get_borderLeftWidth, null):CSSPropertyValue;
+	public var borderTopWidth(get, null):CSSPropertyValue;
+	public var borderRightWidth(get, null):CSSPropertyValue;
+	public var borderBottomWidth(get, null):CSSPropertyValue;
+	public var borderLeftWidth(get, null):CSSPropertyValue;
 	
-	public var borderTopColor(get_borderTopColor, null):CSSPropertyValue;
-	public var borderRightColor(get_borderRightColor, null):CSSPropertyValue;
-	public var borderBottomColor(get_borderBottomColor, null):CSSPropertyValue;
-	public var borderLeftColor(get_borderLeftColor, null):CSSPropertyValue;
+	public var borderTopColor(get, null):CSSPropertyValue;
+	public var borderRightColor(get, null):CSSPropertyValue;
+	public var borderBottomColor(get, null):CSSPropertyValue;
+	public var borderLeftColor(get, null):CSSPropertyValue;
 	
-	public var borderTopStyle(get_borderTopStyle, null):CSSPropertyValue;
-	public var borderRightStyle(get_borderRightStyle, null):CSSPropertyValue;
-	public var borderBottomStyle(get_borderBottomStyle, null):CSSPropertyValue;
-	public var borderLeftStyle(get_borderLeftStyle, null):CSSPropertyValue;
+	public var borderTopStyle(get, null):CSSPropertyValue;
+	public var borderRightStyle(get, null):CSSPropertyValue;
+	public var borderBottomStyle(get, null):CSSPropertyValue;
+	public var borderLeftStyle(get, null):CSSPropertyValue;
 	
 	/**
 	 * font styles
 	 */
-	public var fontSize(get_fontSize, null):CSSPropertyValue;
-	public var fontWeight(get_fontWeight, null):CSSPropertyValue;
-	public var fontStyle(get_fontStyle, null):CSSPropertyValue;
-	public var fontFamily(get_fontFamily, null):CSSPropertyValue;
-	public var fontVariant(get_fontVariant,null):CSSPropertyValue;
-	public var color(get_color, null):CSSPropertyValue;
+	public var fontSize(get, null):CSSPropertyValue;
+	public var fontWeight(get, null):CSSPropertyValue;
+	public var fontStyle(get, null):CSSPropertyValue;
+	public var fontFamily(get, null):CSSPropertyValue;
+	public var fontVariant(get,null):CSSPropertyValue;
+	public var color(get, null):CSSPropertyValue;
 	
 	/**
 	 * text styles
 	 */
-	public var lineHeight(get_lineHeight, null):CSSPropertyValue;
-	public var textTransform(get_textTransform, null):CSSPropertyValue;
-	public var letterSpacing(get_letterSpacing, null):CSSPropertyValue;
-	public var wordSpacing(get_wordSpacing, null):CSSPropertyValue;
-	public var whiteSpace(get_whiteSpace, null):CSSPropertyValue;
-	public var textAlign(get_textAlign, null):CSSPropertyValue;
-	public var textIndent(get_textIndent, null):CSSPropertyValue;
-	public var verticalAlign(get_verticalAlign, null):CSSPropertyValue;
-	public var textDecoration(get_textDecoration, null):CSSPropertyValue;
+	public var lineHeight(get, null):CSSPropertyValue;
+	public var textTransform(get, null):CSSPropertyValue;
+	public var letterSpacing(get, null):CSSPropertyValue;
+	public var wordSpacing(get, null):CSSPropertyValue;
+	public var whiteSpace(get, null):CSSPropertyValue;
+	public var textAlign(get, null):CSSPropertyValue;
+	public var textIndent(get, null):CSSPropertyValue;
+	public var verticalAlign(get, null):CSSPropertyValue;
+	public var textDecoration(get, null):CSSPropertyValue;
 	
 	/**
 	 * visual effect styles
 	 */
-	public var opacity(get_opacity, null):CSSPropertyValue;
-	public var visibility(get_visibility, null):CSSPropertyValue;
-	public var overflowX(get_overflowX, null):CSSPropertyValue;
-	public var overflowY(get_overflowY, null):CSSPropertyValue;
-	public var transformOrigin(get_transformOrigin, null):CSSPropertyValue;
-	public var transform(get_transform, null):CSSPropertyValue;
+	public var opacity(get, null):CSSPropertyValue;
+	public var visibility(get, null):CSSPropertyValue;
+	public var overflowX(get, null):CSSPropertyValue;
+	public var overflowY(get, null):CSSPropertyValue;
+	public var transformOrigin(get, null):CSSPropertyValue;
+	public var transform(get, null):CSSPropertyValue;
 	
 	/**
 	 * user interface styles
 	 */
-	public var cursor(get_cursor, null):CSSPropertyValue;
+	public var cursor(get, null):CSSPropertyValue;
 	
-	public var outlineWidth(get_outlineWidth, null):CSSPropertyValue;
-	public var outlineColor(get_outlineColor, null):CSSPropertyValue;
-	public var outlineStyle(get_outlineStyle, null):CSSPropertyValue;
+	public var outlineWidth(get, null):CSSPropertyValue;
+	public var outlineColor(get, null):CSSPropertyValue;
+	public var outlineStyle(get, null):CSSPropertyValue;
 	
 	/**
 	 * transition styles
 	 */
-	public var transitionProperty(get_transitionProperty, null):CSSPropertyValue;
-	public var transitionDuration(get_transitionDuration, null):CSSPropertyValue;
-	public var transitionDelay(get_transitionDelay, null):CSSPropertyValue;
-	public var transitionTimingFunction(get_transitionTimingFunction, null):CSSPropertyValue;
+	public var transitionProperty(get, null):CSSPropertyValue;
+	public var transitionDuration(get, null):CSSPropertyValue;
+	public var transitionDelay(get, null):CSSPropertyValue;
+	public var transitionTimingFunction(get, null):CSSPropertyValue;
 	
 	/**
 	 * Contains the specified values for the HTMLElement which for
@@ -2735,7 +2736,7 @@ class CoreStyle
 		return getComputedOrInitialProperty(CSSConstants.DISPLAY);
 	}
 	
-	private inline inline function get_position():CSSPropertyValue
+	private inline function get_position():CSSPropertyValue
 	{
 		return getComputedOrInitialProperty(CSSConstants.POSITION);
 	}

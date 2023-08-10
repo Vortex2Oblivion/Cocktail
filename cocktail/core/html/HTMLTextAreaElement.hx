@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -41,31 +42,31 @@ class HTMLTextAreaElement extends FormAssociatedElement
 	/**
 	 * get/set the raw value of the text area
 	 */
-	public var value(get_value, set_value):String;
+	public var value(get, set):String;
 	
 	/**
 	 * Limit the max number of characters whihc can
 	 * be inputed
 	 */
-	public var maxLength(get_maxLength, set_maxLength):Int;
+	public var maxLength(get, set):Int;
 	
 	/**
 	 * The readonly attribute is a boolean attribute that controls
 	 * whether or not the user can edit the form control.
 	 */
-	public var readOnly(get_readOnly, set_readOnly):Bool;
+	public var readOnly(get, set):Bool;
 	
 	/**
 	 * A form control that is disabled must prevent any click events
 	 * that are queued on the user interaction task source
 	 * from being dispatched on the element.
 	 */
-	public var disabled(get_disabled, set_disabled):Bool;
+	public var disabled(get, set):Bool;
 	
 	/**
 	 *	return the text area type
 	 */
-	public var type(get_type, null):String;
+	public var type(get, null):String;
 	
 	/**
 	 * class constructor

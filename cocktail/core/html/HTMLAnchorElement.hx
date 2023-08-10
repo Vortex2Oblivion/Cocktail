@@ -30,13 +30,13 @@ class HTMLAnchorElement extends HTMLElement
 	 * a link between the current element (the source anchor)
 	 * and the destination anchor defined by this attribute.
 	 */
-	public var href(get_href, set_href):String;
+	public var href(get, set):String;
 	
 	/**
 	 * Frame to render the resource in.
 	 * This attribute specifies the name of a frame where a document is to be opened.
 	 */
-	public var target(get_target, set_target):String;
+	public var target(get, set):String;
 	
 	/**
 	 * class constructor

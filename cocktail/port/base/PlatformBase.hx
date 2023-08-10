@@ -72,22 +72,22 @@ class PlatformBase
 	 * same as viewport.width if set explicitely or is dependant
 	 * on the platform
 	 */
-	public var viewportHeight(get_viewportHeight, never):Float;
+	public var viewportHeight(get, never):Float;
 	
 	/**
 	 * Same as above for viewport's width
 	 */
-	public var viewportWidth(get_viewportWidth, never):Float;
+	public var viewportWidth(get, never):Float;
 	
 	/**
 	 * Same as above for viewport's x
 	 */
-	public var viewportX(get_viewportX, never):Float;
+	public var viewportX(get, never):Float;
 	
 	/**
 	 * Same as above for viewport's y
 	 */
-	public var viewportY(get_viewportY, never):Float;
+	public var viewportY(get, never):Float;
 	
 	/**
 	 * the viewport of the current document, in the space
@@ -101,7 +101,7 @@ class PlatformBase
 	 * it will use the stage width and height, and will use the top left of the 
 	 * flash movie as viewport
 	 */
-	public var viewport(default, set_viewport):RectangleVO;
+	public var viewport(default, set):RectangleVO;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// CONSTRUCTOR & INIT

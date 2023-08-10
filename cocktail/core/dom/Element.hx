@@ -36,31 +36,31 @@ class Element extends Node
 	 * returns a reference to the first child node of that element which is of nodeType Element.
 	 * returns, null if this Element has no child nodes or no Element child nodes
 	 */
-	public var firstElementChild(get_firstElementChild, never):Element;
+	public var firstElementChild(get, never):Element;
 	
 	/**
 	 * returns a reference to the first last child node of that element which is of nodeType Element.
 	 * returns, null if this Element has no child nodes or no Element child nodes
 	 */
-	public var lastElementChild(get_lastElementChild, never):Element;
+	public var lastElementChild(get, never):Element;
 	
 	/**
 	 * returns a reference to the first previous sibling element which is of nodeType Element.
 	 * returns, null if this Element has no previous siblings or none of them are Element
 	 */
-	public var previousElementSibling(get_previousElementSibling, never):Element;
+	public var previousElementSibling(get, never):Element;
 	
 	/**
 	 * returns a reference to the first next sibling element which is of nodeType Element.
 	 * returns, null if this Element has no next siblings or none of them are Element
 	 */
-	public var nextElementSibling(get_nextElementSibling, never):Element;
+	public var nextElementSibling(get, never):Element;
 	
 	/**
 	 * Returns the number of children of this Element which are 
 	 * Element
 	 */
-	public var childElementCount(get_childElementCount, never):Int;
+	public var childElementCount(get, never):Int;
 	
 	/**
 	 * class constructor. Set the name of the tag,

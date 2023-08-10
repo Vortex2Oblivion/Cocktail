@@ -27,37 +27,37 @@ class XMLHttpRequestEventTarget extends EventTarget
 	/**
 	 * dispatched when the request starts.
 	 */
-	public var onloadstart(default, set_onloadstart):ProgressEvent->Void;
+	public var onloadstart(default, set):ProgressEvent->Void;
 
 	/**
 	 * dispatched while sending and loading data
 	 */
-	public var onprogress(default, set_onprogress):ProgressEvent->Void;
+	public var onprogress(default, set):ProgressEvent->Void;
 	
 	/**
 	 * dispatched when the request has been aborted. For instance, by invoking the abort() method
 	 */
-	public var onabort(default, set_onabort):ProgressEvent->Void;
+	public var onabort(default, set):ProgressEvent->Void;
 	
 	/**
 	 * dispatched when the request has failed.
 	 */
-	public var onerror(default, set_onerror):ProgressEvent->Void;
+	public var onerror(default, set):ProgressEvent->Void;
 	
 	/**
 	 * dispatched when the request has successfully completed.
 	 */
-	public var onload(default, set_onload):ProgressEvent->Void;
+	public var onload(default, set):ProgressEvent->Void;
 	
 	/**
 	 * dispatched when the author specified timeout has passed before the request could complete.
 	 */
-	public var ontimeout(default, set_ontimeout):ProgressEvent->Void;
+	public var ontimeout(default, set):ProgressEvent->Void;
 	
 	/**
 	 * dispatched when the request has completed (either in success or failure).
 	 */
-	public var onloadend(default, set_onloadend):ProgressEvent->Void;
+	public var onloadend(default, set):ProgressEvent->Void;
 	
 	/**
 	 * class constructor

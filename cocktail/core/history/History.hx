@@ -27,7 +27,7 @@ class History
 	/**
 	 * number of entries in the history
 	 */
-	public var length(get_length, null):Int;
+	public var length(get, null):Int;
 	/**
 	 * current state object
 	 * null if initial document state

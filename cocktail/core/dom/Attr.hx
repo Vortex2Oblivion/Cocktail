@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -31,7 +32,7 @@ class Attr extends Node
 	 * that an XML processor would recognize as markup
 	 * are instead treated as literal text.
 	 */
-	@:isVar public var value(get_value, set_value):String;
+	@:isVar public var value(get, set):String;
 	
 	/**
 	 * True if this attribute was explicitly given a value in the instance document,

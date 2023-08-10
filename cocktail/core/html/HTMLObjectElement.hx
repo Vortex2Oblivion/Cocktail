@@ -1,3 +1,5 @@
+package cocktail.core.html;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.html;
 import cocktail.core.dom.Attr;
 import cocktail.core.event.Event;
 import cocktail.core.event.EventConstants;
@@ -58,12 +59,12 @@ class HTMLObjectElement extends EmbeddedElement
 	/**
 	 * The data attribute specifies the address of the resource.
 	 */
-	public var data(get_data, set_data):String;
+	public var data(get, set):String;
 	
 	/**
 	 * Specifies the mime-type of the resource
 	 */
-	public var type(get_type, set_type):String;
+	public var type(get, set):String;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// attributes

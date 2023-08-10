@@ -49,42 +49,42 @@ class Node extends EventCallback
 	 * The first child of this node. If there is no such node,
 	 * this returns null.
 	 */
-	public var firstChild(get_firstChild, never):Node;
+	public var firstChild(get, never):Node;
 	
 	/**
 	 * The last child of this node. If there is no such node,
 	 * this returns null.
 	 */
-	public var lastChild(get_lastChild, never):Node;
+	public var lastChild(get, never):Node;
 	
 	/**
 	 * The node immediately following this node. 
 	 * If there is no such node, this returns null.
 	 */
-	public var nextSibling(get_nextSibling, never):Node;
+	public var nextSibling(get, never):Node;
 	
 	/**
 	 * The node immediately preceding this node. 
 	 * If there is no such node, this returns null.
 	 */
-	public var previousSibling(get_previousSibling, never):Node;
+	public var previousSibling(get, never):Node;
 	
 	/**
 	 * A value representing the underlying object
 	 */
-	public var nodeType(get_nodeType, never):Int;
+	public var nodeType(get, never):Int;
 	
 	/**
 	 * The value of this node, depending on its type.
 	 * When it is defined to be null, setting it has no effect,
 	 * including if the node is read-only
 	 */
-	public var nodeValue(get_nodeValue, set_nodeValue):String;
+	public var nodeValue(get, set):String;
 	
 	/**
 	 * The name of this node, depending on its type
 	 */
-	public var nodeName(get_nodeName, never):String;
+	public var nodeName(get, never):String;
 	
 	/**
 	 * A NamedNodeMap containing the attributes of this node 
@@ -98,7 +98,7 @@ class Node extends EventCallback
 	 * When this node is a Document or a DocumentType
 	 * which is not used with any Document yet, this is null.
 	 */
-	public var ownerDocument(default, set_ownerDocument):Document;
+	public var ownerDocument(default, set):Document;
 	
 	/**
 	 * The textContent attribute must return the following, depending on the context object:
@@ -117,7 +117,7 @@ class Node extends EventCallback
 	 * 
 	 * TODO : implement setting
 	 */
-	public var textContent(get_textContent, null):String;
+	public var textContent(get, null):String;
 	
 	/**
 	 * class constructor

@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -95,7 +96,7 @@ class HTMLDocument extends Document
 	 * in the document which is focused.
 	 * If no element in the Document is focused, this returns the body element. 
 	 */
-	public var activeElement(get_activeElement, set_activeElement):HTMLElement;
+	public var activeElement(get, set):HTMLElement;
 	
 	/**
 	 * An instance of the FocusManager, managing the focus
@@ -127,13 +128,13 @@ class HTMLDocument extends Document
 	 * Returns true if document has the ability
 	 * to display elements fullscreen, or false otherwise.
 	 */
-	public var fullscreenEnabled(get_fullscreenEnabled, never):Bool;
+	public var fullscreenEnabled(get, never):Bool;
 	
 	/**
 	 * Returns the element that is displayed fullscreen,
 	 * or null if there is no such element.
 	 */
-	public var fullscreenElement(default, set_fullscreenElement):HTMLElement;
+	public var fullscreenElement(default, set):HTMLElement;
 	
 	/**
 	 * Callback called
@@ -336,7 +337,7 @@ class HTMLDocument extends Document
 	* html string or to serialise the whole document into
 	* an html string  	
    */ 	
-	public var innerHTML(get_innerHTML, set_innerHTML):String;
+	public var innerHTML(get, set):String;
 	
 	/**
 	 * A reference to the window of the document or null

@@ -1,3 +1,5 @@
+package cocktail.core.html;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.html;
 
 /**
  * The title element represents the document's title or name. 
@@ -31,7 +32,7 @@ class HTMLTitleElement extends HTMLElement
 	 * (ignoring any other nodes such as comments or elements),
 	 * in tree order. On setting, it must act the same way as the textContent IDL attribute.
 	 */
-	public var text(get_text, set_text):String;
+	public var text(get, set):String;
 
 	public function new() 
 	{

@@ -1,3 +1,5 @@
+package cocktail.core.html;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.html;
 import cocktail.core.css.CSSConstants;
 import cocktail.core.css.CSSStyleSheet;
 import cocktail.core.dom.DOMConstants;
@@ -38,7 +39,7 @@ class HTMLLinkElement extends HTMLElement
 	 * sheets DOM. For all other link elements it always return
 	 * false and does nothing on setting.
 	 */
-	public var disabled(get_disabled, set_disabled):Bool;
+	public var disabled(get, set):Bool;
 	
 	/**
 	 * The destination of the link(s) is given by the href attribute,
@@ -46,7 +47,7 @@ class HTMLLinkElement extends HTMLElement
 	 * potentially surrounded by spaces. If the href attribute
 	 * is absent, then the element does not define a link.
 	 */
-	public var href(get_href, set_href):String;
+	public var href(get, set):String;
 	
 	/**
 	 * The types of link indicated (the relationships) are given by
@@ -56,24 +57,24 @@ class HTMLLinkElement extends HTMLElement
 	 * or if none of the keywords used are allowed then the 
 	 * element does not create any links.
 	 */
-	public var rel(get_rel, set_rel):String;
+	public var rel(get, set):String;
 	
 	/**
 	 * A list of the space separated rel attributes
 	 */
-	public var relList(get_relList, null):Array<String>;
+	public var relList(get, null):Array<String>;
 	
 	/**
 	 * The media attribute says which media the resource
 	 * applies to. The value must be a valid media query.
 	 */
-	public var media(get_media, set_media):String;
+	public var media(get, set):String;
 	
 	/**
 	 * The hreflang attribute on the link element has the same semantics
 	 * as the hreflang attribute on a and area elements.
 	 */
-	public var hreflang(get_hreflang, set_hreflang):String;
+	public var hreflang(get, set):String;
 	
 	/**
 	 * The type attribute gives the MIME type of the linked resource. 
@@ -83,7 +84,7 @@ class HTMLLinkElement extends HTMLElement
 	 * hint to user agents so that they can avoid fetching resources
 	 * they do not support.
 	 */
-	public var type(get_type, set_type):String;
+	public var type(get, set):String;
 	
 	/**
 	 * A reference to the CSS style sheet created by this

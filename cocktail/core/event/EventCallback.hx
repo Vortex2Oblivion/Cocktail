@@ -31,43 +31,43 @@ class EventCallback extends EventTarget
 	/**
 	 * The callback called on mouse click (rapid mouse down and mouse up)
 	 */
-	public var onclick(default, set_onclick):MouseEvent->Void;
+	public var onclick(default, set):MouseEvent->Void;
 	
 	/**
 	 * The callback called on mouse double click
 	 */
-	public var ondblclick(default, set_ondblclick):MouseEvent->Void;
+	public var ondblclick(default, set):MouseEvent->Void;
 	
 	/**
 	 * The callback called on mouse down 
 	 */
-	public var onmousedown(default, set_onmousedown):MouseEvent->Void;
+	public var onmousedown(default, set):MouseEvent->Void;
 	
 	/**
 	 * The callback called on mouse up
 	 */
-	public var onmouseup(default, set_onmouseup):MouseEvent->Void;
+	public var onmouseup(default, set):MouseEvent->Void;
 	
 	/**
 	 * The callback called when the mouse pointer hovers this htmlElement
 	 */
-	public var onmouseover(default, set_onmouseover):MouseEvent->Void;
+	public var onmouseover(default, set):MouseEvent->Void;
 	
 	/**
 	 * The callback called on mouse out of this htmlElement
 	 */
-	public var onmouseout(default, set_onmouseout):MouseEvent->Void;
+	public var onmouseout(default, set):MouseEvent->Void;
 	
 	/**
 	 * The callback called when the mouse pointer moves over this htmlElement
 	 */
-	public var onmousemove(default, set_onmousemove):MouseEvent->Void;
+	public var onmousemove(default, set):MouseEvent->Void;
 	
 	/**
 	 * The callback called when the mouse wheel is rotated while the mouse
 	 * pointer is over this element
 	 */
-	public var onmousewheel(default, set_onmousewheel):WheelEvent->Void;
+	public var onmousewheel(default, set):WheelEvent->Void;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// Keyboard callbacks
@@ -76,12 +76,12 @@ class EventCallback extends EventTarget
 	/**
 	 * The callback called on key down when this htmlElement has focus
 	 */
-	public var onkeydown(default, set_onkeydown):KeyboardEvent->Void;
+	public var onkeydown(default, set):KeyboardEvent->Void;
 	
 	/**
 	 * The callback called on key up when this htmlElement has focus
 	 */
-	public var onkeyup(default, set_onkeyup):KeyboardEvent->Void;
+	public var onkeyup(default, set):KeyboardEvent->Void;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// Focus callbacks
@@ -91,12 +91,12 @@ class EventCallback extends EventTarget
 	 * callback called when the HTMLElement receives 
 	 * the focus
 	 */
-	public var onfocus(default, set_onfocus):FocusEvent->Void;
+	public var onfocus(default, set):FocusEvent->Void;
 	
 	/**
 	 * callback called when the HTMLElement loses the focus
 	 */
-	public var onblur(default, set_onblur):FocusEvent->Void;
+	public var onblur(default, set):FocusEvent->Void;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// UI callbacks
@@ -106,46 +106,46 @@ class EventCallback extends EventTarget
 	 * Callback called when the window through which
 	 * the document is viewed is resized
 	 */
-	public var onresize(default, set_onresize):UIEvent->Void;
+	public var onresize(default, set):UIEvent->Void;
 	
 	/**
 	 * Callback called when the document enters or exit fullscreen
 	 * mode
 	 */
-	public var onfullscreenchange(default, set_onfullscreenchange):Event->Void;
+	public var onfullscreenchange(default, set):Event->Void;
 	
 	/**
 	 * Callback called when
 	 * the content of the HTMLElement
 	 * is scrolled
 	 */
-	public var onscroll(default, set_onscroll):UIEvent->Void;
+	public var onscroll(default, set):UIEvent->Void;
 	
 	/**
 	 * Callback called when the document or
 	 * an external resource, such as a picture
 	 * is loaded
 	 */
-	public var onload(default, set_onload):UIEvent->Void;
+	public var onload(default, set):UIEvent->Void;
 	
 	/**
 	 * Callback called when there is an
 	 * error while loading an external
 	 * resource such as a picture
 	 */
-	public var onerror(default, set_onerror):UIEvent->Void;
+	public var onerror(default, set):UIEvent->Void;
 	
 	/**
 	 * Callback called when a value change in a form input,
 	 * for instance when a checkbox value changes
 	 */
-	public var onchange(default, set_onchange):Event->Void;
+	public var onchange(default, set):Event->Void;
 	
 	/**
 	 * Callback called when is input by the user in a
 	 * text based form control
 	 */
-	public var oninput(default, set_oninput):Event->Void;
+	public var oninput(default, set):Event->Void;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// Form callbacks
@@ -154,12 +154,12 @@ class EventCallback extends EventTarget
 	/**
 	 * Callback called on a form when it is reseted
 	 */
-	public var onreset(default, set_onreset):Event->Void;
+	public var onreset(default, set):Event->Void;
 	
 	/**
 	 * Callback called on a form when it is reseted
 	 */
-	public var onsubmit(default, set_onsubmit):Event->Void;
+	public var onsubmit(default, set):Event->Void;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// Media callbacks
@@ -168,115 +168,115 @@ class EventCallback extends EventTarget
 	/**
 	 * Called when a media begins loading
 	 */
-	public var onloadstart(default, set_onloadstart):Event->Void;
+	public var onloadstart(default, set):Event->Void;
 	
 	/**
 	 * Called when a media has loaded some data
 	 */
-	public var onprogress(default, set_onprogress):Event->Void;
+	public var onprogress(default, set):Event->Void;
 	
 	/**
 	 * Called when the user agent is intentionally not fectching
 	 * media data
 	 */
-	public var onsuspend(default, set_onsuspend):Event->Void;
+	public var onsuspend(default, set):Event->Void;
 	
 	/**
 	 * Called when the loading of a media is canceled
 	 */
-	public var onemptied(default, set_onemptied):Event->Void;
+	public var onemptied(default, set):Event->Void;
 	
 	/**
 	 * Called when the user agent can't fetch data
 	 */
-	public var onstalled(default, set_onstalled):Event->Void;
+	public var onstalled(default, set):Event->Void;
 	
 	/**
 	 * Called when the metadata of the media have been loaded
 	 */
-	public var onloadedmetadata(default, set_onloadedmetadata):Event->Void;
+	public var onloadedmetadata(default, set):Event->Void;
 	
 	/**
 	 * Called when the user agent can render the media data
 	 * at the current playback position for the first time
 	 */
-	public var onloadeddata(default, set_onloadeddata):Event->Void;
+	public var onloadeddata(default, set):Event->Void;
 	
 	/**
 	 * Called when the user agent can resume playback but
 	 * estimates it won't have enough data to play the whole
 	 * media without buffering
 	 */
-	public var oncanplay(default, set_oncanplay):Event->Void;
+	public var oncanplay(default, set):Event->Void;
 	
 	/**
 	 * Called when the user agents estimates that the media
 	 * can be played through at the current playback rate without
 	 * being stopped
 	 */
-	public var oncanplaythrough(default, set_oncanplaythrough):Event->Void;
+	public var oncanplaythrough(default, set):Event->Void;
 	
 	/**
 	 * Called when playback is ready to start after 
 	 * having been paused or delayed due to lack of media data.
 	 */
-	public var onplaying(default, set_onplaying):Event->Void;
+	public var onplaying(default, set):Event->Void;
 	
 	/**
 	 * Called when playback has stopped because the next frame
 	 * is not available, but the user agent expects
 	 * that frame to become available in due course.
 	 */
-	public var onwaiting(default, set_onwaiting):Event->Void;
+	public var onwaiting(default, set):Event->Void;
 	
 	/**
 	 * Called when the seeking attribute has been set to true
 	 */
-	public var onseeking(default, set_onseeking):Event->Void;
+	public var onseeking(default, set):Event->Void;
 	
 	/**
 	 * Called when the seeking attribute has been set to false
 	 */
-	public var onseeked(default, set_onseeked):Event->Void;
+	public var onseeked(default, set):Event->Void;
 	
 	/**
 	 * Called when playback has stopped because the end 
 	 * of the media resource was reached.
 	 */
-	public var onended(default, set_onended):Event->Void;
+	public var onended(default, set):Event->Void;
 	
 	/**
 	 * Called when the duration attribute has
 	 * been updated
 	 */
-	public var ondurationchange(default, set_ondurationchange):Event->Void;
+	public var ondurationchange(default, set):Event->Void;
 	
 	/**
 	 * Called when the current playback position changed 
 	 * as part of normal playback or in an especially
 	 * interesting way, for example discontinuously.
 	 */
-	public var ontimeupdate(default, set_ontimeupdate):Event->Void;
+	public var ontimeupdate(default, set):Event->Void;
 	
 	/**
 	 * Called when The element is no longer paused.
 	 * Fired after the play() method has returned, 
 	 * or when the autoplay attribute has caused playback to begin.
 	 */ 
-	public var onplay(default, set_onplay):Event->Void;
+	public var onplay(default, set):Event->Void;
 	
 	/**
 	 * Called when the element has been paused. 
 	 * Fired after the pause() method has returned.
 	 */
-	public var onpause(default, set_onpause):Event->Void;
+	public var onpause(default, set):Event->Void;
 	
 	/**
 	 * Called when either the volume attribute or the muted 
 	 * attribute has changed. Fired after the relevant 
 	 * attribute's setter has returned.
 	 */
-	public var onvolumechange(default, set_onvolumechange):Event->Void;
+	public var onvolumechange(default, set):Event->Void;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// Transition callback
@@ -287,7 +287,7 @@ class EventCallback extends EventTarget
 	 * removed before completion, such as if the transition-property 
 	 * is removed, then the event will not fire.
 	 */
-	public var ontransitionend(default, set_ontransitionend):TransitionEvent->Void;
+	public var ontransitionend(default, set):TransitionEvent->Void;
 
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// HISTORY callbacks
@@ -296,7 +296,7 @@ class EventCallback extends EventTarget
 	/**
 	 * event.state contains a copy of the information that was provided to pushState() or replaceState()
 	 */
-	public var onpopstate(default, set_onpopstate):PopStateEvent->Void;
+	public var onpopstate(default, set):PopStateEvent->Void;
 	
 	
 	/**

@@ -1,3 +1,5 @@
+package cocktail.core.dom;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.dom;
 
 /**
  * Objects implementing the NamedNodeMap interface are used to 
@@ -32,7 +33,7 @@ class NamedNodeMap
 	/**
 	 * The number of nodes in this map.
 	 */
-	public var length(get_length, never):Int;
+	public var length(get, never):Int;
 	
 	/**
 	 * class constructor

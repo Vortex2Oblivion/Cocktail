@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -73,7 +74,7 @@ class HTMLElement extends Element
 	 * is only focused if it is intrinsically focusable, like for
 	 * instance an HTMLInputElement
 	 */
-	public var tabIndex(get_tabIndex, set_tabIndex):Int;
+	public var tabIndex(get, set):Int;
 	
 	/**
 	 * This attribute assigns an id to an element. 
@@ -82,7 +83,7 @@ class HTMLElement extends Element
 	 * get/set the id attribute from the attributes
 	 * map
 	 */
-	public var id(get_id, set_id):String;
+	public var id(get, set):String;
 	
 	/**
 	 * get/set a class on the HTMLElement.
@@ -92,7 +93,7 @@ class HTMLElement extends Element
 	 * className is used instead of class for conflict with
 	 * language reserved word
 	 */
-	public var className(get_className, set_className):String;
+	public var className(get, set):String;
 	
 	/**
 	 * Return the space separated classes
@@ -108,7 +109,7 @@ class HTMLElement extends Element
 	 * as opposed to being directly accessed by the user.
 	 * HTMLElement with hiden attribute set are not rendered.
 	 */
-	public var hidden(get_hidden, set_hidden):Bool;
+	public var hidden(get, set):Bool;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// Scroll attributes
@@ -117,12 +118,12 @@ class HTMLElement extends Element
 	/**
 	 * Gets/sets the top scroll offset of an element
 	 */
-	public var scrollTop(get_scrollTop, set_scrollTop):Int;
+	public var scrollTop(get, set):Int;
 	
 	/**
 	 * Gets/sets the left scroll offset of an element
 	 */
-	public var scrollLeft(get_scrollLeft, set_scrollLeft):Int;
+	public var scrollLeft(get, set):Int;
 	
 	/**
 	 * The scroll view height of the HTMLElement. Returns either
@@ -131,12 +132,12 @@ class HTMLElement extends Element
 	 * scrollbars because its content is higher than its content area,
 	 * scrollHeight will be larger than clientHeight
 	 */
-	public var scrollHeight(get_scrollHeight, never):Int;
+	public var scrollHeight(get, never):Int;
 	
 	/**
 	 * Same as scrollHeight for width
 	 */
-	public var scrollWidth(get_scrollWidth, never):Int;
+	public var scrollWidth(get, never):Int;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// DOM PARSER attributes
@@ -146,13 +147,13 @@ class HTMLElement extends Element
 	 * sets or gets the inner HTML
 	 * syntax describing the element's descendants.
 	 */
-	public var innerHTML(get_innerHTML, set_innerHTML):String;
+	public var innerHTML(get, set):String;
 	
 	/**
 	 * sets or gets the outer HTML
 	 * syntax describing the element and its descendants.
 	 */
-	public var outerHTML(get_outerHTML, set_outerHTML):String;
+	public var outerHTML(get, set):String;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// Rendering attributes
@@ -174,49 +175,49 @@ class HTMLElement extends Element
 	 * The element from which all offset calculations are currently computed,
 	 * this is the first positioned ancestor of the HTMLElement
 	 */
-	public var offsetParent(get_offsetParent, never):HTMLElement;
+	public var offsetParent(get, never):HTMLElement;
 	
 	/**
 	 * The width of an element, relative to the layout
 	 */
-	public var offsetWidth(get_offsetWidth, never):Int;
+	public var offsetWidth(get, never):Int;
 	
 	/**
 	 * The height of an element, relative to the layout
 	 */
-	public var offsetHeight(get_offsetHeight, never):Int;
+	public var offsetHeight(get, never):Int;
 	
 	/**
 	 * The distance from this element's left border to its 
 	 * offsetParent's left border.
 	 */
-	public var offsetLeft(get_offsetLeft, never):Int;
+	public var offsetLeft(get, never):Int;
 	
 	/**
 	 * The distance from this element's top border to its
 	 * offsetParent's top border.
 	 */
-	public var offsetTop(get_offsetTop, never):Int;
+	public var offsetTop(get, never):Int;
 	
 	/**
 	 * The inner width of an element
 	 */
-	public var clientWidth(get_clientWidth, never):Int;
+	public var clientWidth(get, never):Int;
 	
 	/**
 	 * The inner height of an element
 	 */
-	public var clientHeight(get_clientHeight, never):Int;
+	public var clientHeight(get, never):Int;
 	
 	/**
 	 * The width of the left border of an element
 	 */
-	public var clientLeft(get_clientLeft, never):Int;
+	public var clientLeft(get, never):Int;
 	
 	/**
 	 * The width of the top border of an element
 	 */
-	public var clientTop(get_clientTop, never):Int;
+	public var clientTop(get, never):Int;
 	
 	/////////////////////////////////
 	// STYLE attribute

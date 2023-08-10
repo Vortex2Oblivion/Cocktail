@@ -1,3 +1,5 @@
+package cocktail.core.window;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.window;
 
 import cocktail.core.dom.Document;
 import cocktail.core.event.Event;
@@ -42,13 +43,13 @@ class Window extends EventCallback
 	 * Height (in pixels) of the browser window viewport including,
 	 * if rendered, the horizontal scrollbar.
 	 */
-	public var innerHeight(get_innerHeight, never):Int;
+	public var innerHeight(get, never):Int;
 	
 	/**
 	 * Width (in pixels) of the browser window viewport including,
 	 * if rendered, the vertical scrollbar.
 	 */
-	public var innerWidth(get_innerWidth, never):Int;
+	public var innerWidth(get, never):Int;
 	
 	/**
 	 * A reference to the history instance

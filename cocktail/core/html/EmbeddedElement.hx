@@ -1,3 +1,5 @@
+package cocktail.core.html;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.html;
 
 import cocktail.core.dom.Node;
 import cocktail.core.renderer.EmbeddedBoxRenderer;
@@ -29,13 +30,13 @@ class EmbeddedElement extends HTMLElement
 	 * get/set the height html attribute of this embedded element. Return
 	 * value depends on the subclass embedded element
 	 */
-	public var height(get_height, set_height):Int;
+	public var height(get, set):Int;
 		
 	/**
 	 * get/set the width html attribute of this embedded element. Return
 	 * value depends on the subclass embedded element
 	 */
-	public var width(get_width, set_width):Int;
+	public var width(get, set):Int;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	// attributes
@@ -45,19 +46,19 @@ class EmbeddedElement extends HTMLElement
 	 * The intrinsic height of the embedded asset, for instance
 	 * for an image, its height in pixel
 	 */
-	public var intrinsicHeight(get_intrinsicHeight, null):Null<Float>;
+	public var intrinsicHeight(get, null):Null<Float>;
 	
 	/**
 	 * The intrinsic width of the embedded asset, for instance
 	 * for an image, its width in pixel
 	 */
-	public var intrinsicWidth(get_intrinsicWidth, null):Null<Float>;
+	public var intrinsicWidth(get, null):Null<Float>;
 	
 	/**
 	 * The intrinsic ratio of the embedded asset, for instance
 	 * for a video, its pixel ratio
 	 */
-	public var intrinsicRatio(get_intrinsicRatio, null):Null<Float>;
+	public var intrinsicRatio(get, null):Null<Float>;
 	
 	/**
 	 * class constructor

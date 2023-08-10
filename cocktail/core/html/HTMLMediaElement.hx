@@ -1,3 +1,5 @@
+package cocktail.core.html;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.html;
 import cocktail.core.dom.Element;
 import cocktail.core.dom.Node;
 import cocktail.core.event.Event;
@@ -67,25 +68,25 @@ class HTMLMediaElement extends EmbeddedElement
 	 * to show. The attribute, if present, must
 	 * contain a valid non-empty URL potentially surrounded by spaces.
 	 */
-	public var src(get_src, set_src):String;
+	public var src(get, set):String;
 	
 	/**
 	 * When true, automatically begins playback of the media
 	 */
-	public var autoplay(get_autoplay, set_autoplay):Bool;
+	public var autoplay(get, set):Bool;
 	
 	/**
 	 * Determines wether the media element is to seek
 	 * back to the start of the media resource upon reaching the end.
 	 */
-	public var loop(get_loop, set_loop):Bool;
+	public var loop(get, set):Bool;
 	
 	/**
 	 * The preload attribute is intended to provide
 	 * a hint to the user agent about what the author
 	 * thinks will lead to the best user experience. 
 	 */
-	public var preload(get_preload, set_preload):String;
+	public var preload(get, set):String;
 	
 	/////////////////////////////////
 	// ATTRIBUTES
@@ -222,7 +223,7 @@ class HTMLMediaElement extends EmbeddedElement
 	 * unless that is zero, in which case it must return the element's official playback position.
 	 * The returned value is expressed in seconds. 
 	 */
-	public var currentTime(get_currentTime, set_currentTime):Float;
+	public var currentTime(get, set):Float;
 	
 	public var currentSrc(default, null):String;
 	
@@ -241,7 +242,7 @@ class HTMLMediaElement extends EmbeddedElement
 	 * TODO 2 : Users agents must accurately determine the ranges available, 
 	 * even for media streams where this can only be determined by tedious inspection.
 	 */
-	public var buffered(get_buffered, never):TimeRanges;
+	public var buffered(get, never):TimeRanges;
 	
 	/**
 	 * The paused attribute represents whether the media
@@ -260,14 +261,14 @@ class HTMLMediaElement extends EmbeddedElement
 	 * and false if the volume attribute is being honored. Can be set,
 	 * to change whether the audio is muted or not.
 	 */
-	public var muted(default, set_muted):Bool;
+	public var muted(default, set):Bool;
 	
 	/**
 	 * Returns the current playback volume, as a number in
 	 * the range 0.0 to 1.0, where 0.0 is the quietest and
 	 * 1.0 the loudest. Can be set, to change the volume.
 	 */
-	public var volume(default, set_volume):Float;
+	public var volume(default, set):Float;
 	
 	/**
 	 * a reference to the proxy class allowing

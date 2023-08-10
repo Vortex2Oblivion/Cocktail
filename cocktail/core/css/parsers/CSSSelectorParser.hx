@@ -1,3 +1,5 @@
+package cocktail.core.css.parsers;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.css.parsers;
 
 using StringTools;
 import cocktail.core.css.CSSData;
@@ -492,7 +493,7 @@ class CSSSelectorParser
 		var start:Int = position;
 		
 		var attribute:String = null;
-		var operator:String = null;
+		var _operator:String = null;
 		var value:String = null;
 		
 		var state:AttributeSelectorParserState = IGNORE_SPACES;
@@ -540,7 +541,7 @@ class CSSSelectorParser
 				case OPERATOR:
 					if (!isOperatorChar(c))
 					{
-						operator = selector.substr(start, position - start);
+						_operator = selector.substr(start, position - start);
 						state = IGNORE_SPACES;
 						next = END_OPERATOR;
 						continue;
@@ -615,9 +616,9 @@ class CSSSelectorParser
 		
 		if (attribute != null)
 		{
-			if (operator != null)
+			if (_operator != null)
 			{
-				switch(operator)
+				switch(_operator)
 				{
 					case '=':
 						simpleSelectorSequenceItemValues.push(SimpleSelectorSequenceItemValue.ATTRIBUTE(AttributeSelectorValue.ATTRIBUTE_VALUE(attribute, value)));

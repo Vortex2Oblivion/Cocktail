@@ -1,3 +1,5 @@
+package cocktail.core.html;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.html;
 
 /**
  * The param element defines parameters for plugins invoked by object elements. 
@@ -23,12 +24,12 @@ class HTMLParamElement extends HTMLElement
 	/**
 	 * The name attribute gives the name of the parameter.
 	 */
-	public var name(get_name, set_name):String;
+	public var name(get, set):String;
 	
 	/**
 	 * The value attribute gives the value of the parameter.
 	 */
-	public var value(get_value, set_value):String;
+	public var value(get, set):String;
 	
 	/**
 	 * class constructor

@@ -1,3 +1,5 @@
+package cocktail.port.base;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.port.base;
 
 import cocktail.core.geom.GeomData;
 import cocktail.core.graphics.GraphicsContext;
@@ -25,53 +26,53 @@ class NativeInputBase
 	/**
 	 * get/set the value of the input
 	 */
-	@:isVar public var value(get_value, set_value):String;
+	@:isVar public var value(get, set):String;
 	
 	/**
 	 * get/set the checkedness of the input
 	 */
-	@:isVar public var checked(get_checked, set_checked):Bool;
+	@:isVar public var checked(get, set):Bool;
 	
 	/**
 	 * get/set the maxLength of the input, used only
 	 * for text based inputs
 	 */
-	public var maxLength(default, set_maxLength):Int;
+	public var maxLength(default, set):Int;
 	
 	/**
 	 * get/set wether the user can interact with the
 	 * input
 	 */
-	public var disabled(default, set_disabled):Bool;
+	public var disabled(default, set):Bool;
 	
 	/**
 	 * get/set read-only, similar to disabled but
 	 * only for text based controls
 	 */
-	public var readonly(default, set_readonly):Bool;
+	public var readonly(default, set):Bool;
 	
 	/**
 	 * Return the instrinsic width of the native control
 	 */
-	public var intrinsicWidth(get_intrinsicWidth, null):Int;
+	public var intrinsicWidth(get, null):Int;
 	
 	/**
 	 * Return the instrinsic height of the native control
 	 */
-	public var intrinsicHeight(get_intrinsicHeight, null):Int;
+	public var intrinsicHeight(get, null):Int;
 	
 	/**
 	 * get/set the position of the input relative to
 	 * the viewport
 	 */
-	@:isVar public var viewport(get_viewport, set_viewport):RectangleVO;
+	@:isVar public var viewport(get, set):RectangleVO;
 	
 	/**
 	 * get/set the cliprect of the input which is the rectangle,
 	 * relative to the viewport where the input can be displayed 
 	 * without being masked
 	 */
-	@:isVar public var clipRect(get_clipRect, set_clipRect):RectangleVO;
+	@:isVar public var clipRect(get, set):RectangleVO;
 	
 	/**
 	 * Callback, called when the native input is

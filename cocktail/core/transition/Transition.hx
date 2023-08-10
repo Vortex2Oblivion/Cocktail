@@ -1,3 +1,4 @@
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -73,7 +74,7 @@ class Transition
 	 * Returns the current value of the transitioned property,
 	 * based on the current time and the used easing function
 	 */
-	public var currentValue(get_currentValue, never):Float;
+	public var currentValue(get, never):Float;
 	
 	/**
 	 * Called on the target computed style once the transition is complete
@@ -102,7 +103,7 @@ class Transition
 	 * Returns wether the transition is complete based on the
 	 * elapsed time since it started
 	 */
-	public var complete(get_complete, never):Bool;
+	public var complete(get, never):Bool;
 	
 	/**
 	 * class constructor. Set

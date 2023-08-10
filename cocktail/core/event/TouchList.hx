@@ -1,3 +1,5 @@
+package cocktail.core.event;
+
 /*
  * Cocktail, HTML rendering engine
  * http://haxe.org/com/libs/cocktail
@@ -6,7 +8,6 @@
  * Cocktail is available under the MIT license
  * http://www.silexlabs.org/labs/cocktail-licensing/
 */
-package cocktail.core.event;
 
 import cocktail.core.event.Touch;
 
@@ -24,7 +25,7 @@ class TouchList
 	 */
 	private var _touches:Array<Touch>;
 	
-	public var length(get_length, null):Int;
+	public var length(get, null):Int;
 	
 	/**
 	 * class constructor
